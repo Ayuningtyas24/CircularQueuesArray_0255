@@ -54,8 +54,8 @@ public:
         }
         cout << "\nThe element deleted from the queue is: " << queue_array[FRONT];
 
-            // Cek jika antrian hanya memiliki satu elemen
-            if (FRONT == REAR)
+        // Cek jika antrian hanya memiliki satu elemen
+        if (FRONT == REAR)
         {
             FRONT = -1;
             REAR = -1;
@@ -68,5 +68,11 @@ public:
             else
                 FRONT = FRONT + 1;
         }
+    }
+
+    void display()
+    {
+        int FRONT_position = FRONT;
+        int REAR_position = REAR;
     }
 }
